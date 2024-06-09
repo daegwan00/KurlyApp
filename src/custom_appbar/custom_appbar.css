@@ -1,0 +1,80 @@
+/* CSS for Logo Component */
+.logs {
+    display: flex;
+}
+
+.logs .mbtn {
+    margin-left: 10px;
+    color: #5F0080;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.heartimage {
+    margin-left: 20%;
+}
+
+/* CSS for Header Component */
+.header-component {
+    display: flex;
+    width: 80%; 
+    margin-top: 3%;
+    margin-left: 20%;
+}
+
+/* CSS for SearchBar Component */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid purple;
+    border-radius: 10px;
+    width: 25%;
+    margin-left: 5%;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    outline: none;
+    color: purple;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.search-button i {
+    font-size: 24px;
+}
+
+/* CSS for Headerbutton Component */
+.header-buttons {
+    display: flex;
+    gap: 1px;
+    margin-left: 60%;
+}
+
+.header-buttons button {
+    padding: 10px 10px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 13px;
+    color: #333;
+    outline: none;
+}
+
+.header-buttons button:hover {
+    background-color: #f0f0f0;
+}
+
+.header-buttons .signup {
+    color: #5F0080;
+}
