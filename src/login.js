@@ -5,7 +5,6 @@ import Logo from './headerComponent/Logo';
 import SearchBar from './headerComponent/search/SearchBar';
 import Headerbutton from './headerComponent/headerbtn/headerbutton';
 import Category from './category/Category';
-//import CustomAppBar from './custom_appbar/custom_appbar';
 import { IoIosHeartEmpty } from "react-icons/io";
 import { PiShoppingCartLight } from "react-icons/pi";
 import { IoLocationOutline } from "react-icons/io5";
@@ -124,6 +123,7 @@ function App() {
       </HeaderMiddle>
       
       <Category />
+      
       <LoginContainer>
         <h2>로그인</h2>
         <Input type="text" placeholder="아이디를 입력해주세요" />
