@@ -6,10 +6,10 @@ import {Navigation,Pagination,Autoplay} from 'swiper/modules';
 import 'swiper/css/autoplay'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-
+import '../banner/Homebanner.css';
 //SwipeCore.use([Navigation,Pagination,Autoplay])
 
-export default function Animation() {
+export default function Animmate() {
 
   return(
     <Swiper
