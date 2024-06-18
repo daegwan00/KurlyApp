@@ -10,7 +10,7 @@ const Sidebar = () => {
       <nav>
         <ul>
           <li><a href="#">상품관리</a></li>
-          <li><a href="#">회원관리</a></li>
+          <li><a href="#">카테고리</a></li>
         </ul>
       </nav>
     </div>

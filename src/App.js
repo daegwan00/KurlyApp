@@ -6,6 +6,7 @@ import SignUp from './signup';
 import ShopCart from './shopping/ShopCart';
 import HomePage from './headerComponent/HomePage';
 import MainLayout from './Management/MainLayout';
+import Mainlayout2 from './Manage2/Mainlayout2';
 
 
 
@@ -19,7 +20,8 @@ function App() {
     //     <Route path="/ShopCart" element={<ShopCart/>} />
     //   </Routes>
     // </Router>
-    <MainLayout/>
+    //<MainLayout/>
+    <Mainlayout2/>
   );
 }
 
