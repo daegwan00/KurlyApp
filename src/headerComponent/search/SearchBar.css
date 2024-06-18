@@ -4,31 +4,34 @@
     align-items: center;
     border: 1px solid purple;
     border-radius: 10px;
-    width: 25%;
+    width: 30%;
     margin-left: 5%;
   }
   
-  .search-input {
+.search-input {
     border: none;
     outline: none;
     padding: 10px;
     width: 100%;
     border-radius: 50px;
-    font-size: 16px;
-  }
+    font-size: 13px;
+}
   
-  .search-button {
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 이 부분이 세로 중앙 정렬을 담당합니다 */
     background: none;
     border: none;
     outline: none;
     color: purple;
     cursor: pointer;
     padding: 0 10px;
-  }
+}
   
-  .search-button i {
+.search-button i {
     font-size: 24px;
-  }
+}
   
   /* 아이콘 사용을 위해 FontAwesome 라이브러리를 추가하세요. */
   

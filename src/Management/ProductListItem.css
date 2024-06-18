@@ -1,0 +1,33 @@
+.product-list-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .product-list-item td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .edit-button, .delete-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .edit-button {
+    background-color: #6a1b9a;
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #e53935;
+    color: white;
+  }
+  

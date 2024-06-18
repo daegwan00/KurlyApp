@@ -3,7 +3,7 @@ import SearchBar from './search/SearchBar';
 import './header.css';
 import Headerbutton from './headerbtn/headerbutton';
 import Category from '../category/Category';
-
+import {useNavigate} from "react-router-dom";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { PiShoppingCartLight } from "react-icons/pi";
 import { IoLocationOutline } from "react-icons/io5";
@@ -16,7 +16,12 @@ import IconButton from '@mui/material/IconButton';
 import './hearticon.css';
 
 
-export default function Header(){
+export default function HomePage(){
+    const navigate = useNavigate();
+
+    const handleCartClick = () => {
+        navigate('/ShopCart');
+    }
     return ( 
         <>
             <div>
@@ -35,7 +40,7 @@ export default function Header(){
                      <IoIosHeartEmpty style={{marginRight: '10px', fontSize: '30px', color: "black"}}/>
                 </IconButton>
 
-                <IconButton>
+                <IconButton onClick={handleCartClick}>
                     <PiShoppingCartLight style={{fontSize:'30px', color: "black"}}/>
                 </IconButton>
 

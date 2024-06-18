@@ -1,62 +1,16 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import Logo from './headerComponent/Logo';
-import SearchBar from './headerComponent/search/SearchBar';
-import Headerbutton from './headerComponent/headerbtn/headerbutton';
-import Category from './category/Category';
-import { IoIosHeartEmpty } from "react-icons/io";
-import { PiShoppingCartLight } from "react-icons/pi";
-import { IoLocationOutline } from "react-icons/io5";
-
-import IconButton from '@mui/material/IconButton';
-
+import { useNavigate } from 'react-router-dom';
 import './headerComponent/hearticon.css';
-
+import './style.css';
+import HeaderBar from './headerComponent/headerBar';
 const Container = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 `;
-
-const HeaderTop = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-bottom: 10px;
-`;
-
-const HeaderMiddle = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-`;
-
-const LogoContainer = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: center;
-`;
-
-// const SearchContainer = styled.div`
-//   flex: 1;
-//   display: flex;
-//   justify-content: center;
-
-  
-
-// `;
-
-const IconContainer = styled.div`
-  display: flex;
-  align-items: center;
-  flex: 1;
-  justify-content: flex-end;
-`;
-
-
 
 const LoginContainer = styled.div`
   display: flex;
@@ -98,38 +52,29 @@ const Footer = styled.footer`
   margin-top: 50px;
 `;
 
-function App() {
+function LoginP() {
+
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    // 로그인 로직을 여기에 추가합니다
+    console.log('로그인 버튼 클릭');
+    // navigate('/'); // 로그인 후 메인 페이지로 이동
+  };
+
+  const handleSingUpClick = () => {
+    navigate('/signup');
+  }
   return (
-    <Container>
-      <HeaderTop>
-        <Headerbutton />
-      </HeaderTop>
-      <HeaderMiddle>
-        <LogoContainer>
-          <Logo />
-        </LogoContainer>
-          <SearchBar />
-        <IconContainer>
-          <IconButton>
-            <IoLocationOutline style={{ marginRight: '10px', fontSize: '30px', color: "black" }} />
-          </IconButton>
-          <IconButton>
-            <IoIosHeartEmpty style={{ marginRight: '10px', fontSize: '30px', color: "black" }} />
-          </IconButton>
-          <IconButton>
-            <PiShoppingCartLight style={{ fontSize: '30px', color: "black" }} />
-          </IconButton>
-        </IconContainer>
-      </HeaderMiddle>
-      
-      <Category />
-      
+
+     <Container>
+      <HeaderBar />
       <LoginContainer>
         <h2>로그인</h2>
         <Input type="text" placeholder="아이디를 입력해주세요" />
         <Input type="password" placeholder="비밀번호를 입력해주세요" />
-        <Button>로그인</Button>
-        <OutlineButton>회원가입</OutlineButton>
+        <Button className="loginbtn"onClick={handleLoginClick}>로그인</Button>
+        <OutlineButton className="signupbtn" onClick={handleSingUpClick}>회원가입</OutlineButton>
       </LoginContainer>
       <Footer>
         <div>Site name</div>
@@ -156,7 +101,7 @@ function App() {
   );
 }
 
-export default App;
+export default LoginP;
 
 
 
