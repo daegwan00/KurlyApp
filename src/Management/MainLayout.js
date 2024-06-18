@@ -8,8 +8,7 @@ const MainLayout = () => {
   return (
     <div className="main-layout">
       <Sidebar />
-      <div className="content">
-        <ProductRegistration />
+      <div className="content"> 
         <ProductList />
       </div>
     </div>
