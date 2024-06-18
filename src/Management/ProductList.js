@@ -35,7 +35,7 @@ const ProductList = () => {
             <th>ID</th>
             <th>ProductName</th>
             <th>Quantity</th>
-            <th>Actions</th>
+            
           </tr>
         </thead>
         <tbody>
