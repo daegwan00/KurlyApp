@@ -1,16 +1,26 @@
 import React from "react";
 import './Slist.css';
 import Button from '@mui/material/Button';
+import { useNavigate } from "react-router-dom";
 import { PiShoppingCart } from "react-icons/pi";
 
 
 
 export default function Shopping() {
+    const navigate = useNavigate();
+
+    const handleDetail = () => {
+        navigate('/detail');
+    }
     return(
         
         <div className="whole-container">
             <div className="container1">
-                <img alt ="food1"className="img1" src ="https://product-image.kurly.com/cdn-cgi/image/fit=crop,width=360,height=468,quality=85/product/image/6566e209-8ade-43c6-af94-01168edf495b.jpg"></img>
+                <img alt ="food1"
+                className="img1" 
+                src ="https://product-image.kurly.com/cdn-cgi/image/fit=crop,width=360,height=468,quality=85/product/image/6566e209-8ade-43c6-af94-01168edf495b.jpg"
+                onClick={handleDetail}>
+                </img>
                 <Button variant="outlined" className="sbtn" startIcon={<PiShoppingCart/>} style={{borderColor: 'rgh(221,221,221)'}}>담기</Button>
             </div>
             <div className="container1">

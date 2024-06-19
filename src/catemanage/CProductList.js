@@ -1,5 +1,5 @@
 import React from 'react';
-import CProductListItem from './CProductListItem';
+import CProductListItem from './cProductListItem';
 import CPagination from './CPagination';
 //import './cProductList.css';
 
