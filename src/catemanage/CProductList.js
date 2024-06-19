@@ -8,13 +8,12 @@ import CProductRegist from './CProductRegist';
 
 const CProductList = () => {
   const dummyProducts = [
-    { id: 1, productName: '불닭볶음면', quantity: 100 },
-    { id: 2, productName: '신라면', quantity: 50 },
-    { id: 3, productName: '햇반 10묶음', quantity: 100 },
-    { id: 4, productName: '감자 10kg', quantity: 30 },
-    { id: 5, productName: '불닭볶음면', quantity: 100 },
-    { id: 6, productName: '신라면', quantity: 50 },
-    { id: 7, productName: '햇반 10묶음', quantity: 100 },
+    { id: 1, Name: '채소' },
+    { id: 2, Name: '정육'},
+    { id: 3, Name: '면'},
+    { id: 4, Name: '간식'},
+    { id: 5, Name: '와인, 위스키'},
+    
   ];
 
   return (
@@ -25,9 +24,7 @@ const CProductList = () => {
         <thead>
           <tr>
             <th>ID</th>
-            <th>ProductName</th>
-            <th>Quantity</th>
-            <th>price</th>
+            <th>Name</th>
           </tr>
         </thead>
         <tbody>
@@ -35,8 +32,8 @@ const CProductList = () => {
             <CProductListItem
               key={product.id}
               id={product.id}
-              productName={product.productName}
-              quantity={product.quantity}
+              Name={product.Name}
+              
             />
           ))}
         </tbody>

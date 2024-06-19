@@ -8,6 +8,8 @@ import HomePage from './headerComponent/HomePage';
 import MainLayout from './Management/MainLayout';
 import Mainlayout2 from './Manage2/Mainlayout2';
 import CMainlayout from './catemanage/CMainlayout';
+
+
 function App() {
   return (
     // <Router>
@@ -20,7 +22,7 @@ function App() {
     // </Router>
     //<MainLayout/>
     //<Mainlayout2/>
-    <CMainlayout/>
+    <CMainlayout/> 
   );
 }
 
