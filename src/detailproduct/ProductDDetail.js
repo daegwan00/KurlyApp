@@ -40,7 +40,7 @@ const ProductDetail = () => {
           <p>원산지: 상품설명/상세정보 참조</p>
           <p>로그인 후, 적립 혜택이 제공됩니다.</p>
         </div>
-        <button className="coupon-button">쿠폰 + 최대 7% 적립 받기</button>
+        
         <div className="product-details">
           <div data-label="배송:"><span>샛별배송</span></div>
             <div data-label="판매자:"><span>컬리</span></div>
@@ -49,10 +49,7 @@ const ProductDetail = () => {
             <div data-label="중량/용량:"><span></span></div>
             <div data-label="알레르기정보:"><span></span></div>
             <div data-label="소비기한(또는 유통기한)정보:"><span>출고일 기준, 소비기한 만기 185일 이상 남은 상품을 보내드립니다.</span></div>
-        </div>
-        <div className="product-selection">
-          <label htmlFor="product-options">상품 선택</label>
-          <div className="product-option-detail">
+            <div className="product-option-detail" data-label="상품선택: ">
               <span>[하코야] 살얼음 동동 냉메밀소바 2인분 (메밀함량 40%)</span>
               <div className="quantity-control">
                 <button onClick={handleDecrement} className="quantity-button">-</button>
@@ -61,15 +58,12 @@ const ProductDetail = () => {
               </div>
           </div>
         </div>
+
         <div className='product-summary'>
           <div className='total-price'>
             <span>총 상품금액: </span>
             <span className='price-amout'>0원</span>
           </div>
-          {/* <div className='benefit-info'>
-            <span className='benefit-label'>적립</span>
-            <span>로그인 후, 적립 혜택 제공</span>
-          </div> */}
         </div>
         <button className='add-to-cart-button'>장바구니 담기</button>
       </div>
