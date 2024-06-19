@@ -1,7 +1,10 @@
 import React from 'react';
-import CProductListItem from './cProductListItem';
+
+import CAProductListItem from './CAProductListItem';
+
 import CPagination from './CPagination';
-//import './cProductList.css';
+import './CAProductList.css';
+
 
 import CProductRegist from './CProductRegist';
 
@@ -29,7 +32,7 @@ const CProductList = () => {
         </thead>
         <tbody>
           {dummyProducts.map(product => (
-            <CProductListItem
+            <CAProductListItem
               key={product.id}
               id={product.id}
               Name={product.Name}

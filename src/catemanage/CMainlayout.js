@@ -1,5 +1,6 @@
 import React from 'react';
-import CProductList from './CProductList';
+
+import CProductList from './CAProductList';
 import './CMainlayout.css';
 import CSidebar from './CSidebar';
 
