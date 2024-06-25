@@ -13,16 +13,16 @@ import ProductDetail from './detailproduct/ProductDDetail';
 
 function App() {
   return (
-    // <Router>
-    //   <Routes>
-    //     <Route path="/" element={<HomePage/>} />
-    //     <Route path="/login" element={<LoginP/>} />
-    //     <Route path="/signup" element={<SignUp/>} />
-    //     <Route path="/ShopCart" element={<ShopCart/>} />
-    //     <Route path="/detail" element={<ProductDetail/>} />
-    //   </Routes> 
-    // </Router>
-   <CMainlayout/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/login" element={<LoginP/>} />
+        <Route path="/signup" element={<SignUp/>} />
+        <Route path="/ShopCart" element={<ShopCart/>} />
+        <Route path="/detail" element={<ProductDetail/>} />
+      </Routes> 
+    </Router>
+   //<CMainlayout/>
   );
 }
 

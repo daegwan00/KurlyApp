@@ -12,6 +12,7 @@ export default function Shopping() {
     const handleDetail = () => {
         navigate('/detail');
     }
+    
     return(
         
         <div className="whole-container">
